@@ -2,7 +2,6 @@ version:0.0
 os: linux
 ---
 - name: install apache2, sqlite3, git pn remote server
-  hosts: host01
   sudo: yes
   tasks:
   - name: Install list of packages
