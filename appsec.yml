@@ -1,2 +1,11 @@
-version: 0.0
+version:0.0
 os: linux
+  hosts: host01
+  sudo: yes
+  tasks:
+  - name: Install list of packages
+    action: apt pkg={{item}} state=installed
+    with_items:
+      - apache2
+      - sqlite3
+      - git
