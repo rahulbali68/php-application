@@ -1,6 +1,5 @@
 version:0.0
 os: linux
-  hosts: host01
   sudo: yes
   tasks:
   - name: Install list of packages
